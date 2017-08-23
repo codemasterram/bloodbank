@@ -6,4 +6,5 @@ urlpatterns = [
     url(r'^bloodstock$', views.bloodstock, name='bloodstock'),
     url(r'^bloodbank$', views.bloodbank, name='bloodbank'),
     url(r'^faq$', views.faq, name='faq'),
+    url(r'^login$', views.login, name='login'),
 ]

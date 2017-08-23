@@ -17,3 +17,6 @@ def bloodbank(request):
 
 def faq(request):
 	return render(request, 'faq.html')
+
+def login(request):
+	return render(request, 'login.html')

@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="login space" id="login">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<form class="form-horizontal labform well" method="POST" action="">
+				{% csrf_token %}
+				<fieldset>
+
+				<!-- Form Name -->
+				<legend>Login</legend>
+
+				<!-- Text input-->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="username">Username</label>  
+				  <div class="col-md-5">
+				  <input id="username" name="username" type="text" placeholder="User Name" class="form-control input-md" required="">
+				    
+				  </div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="password">Password</label>  
+				  <div class="col-md-5">
+				  <input id="password" name="password" type="text" placeholder="Password" class="form-control input-md" required="">
+				    
+				  </div>
+				</div>
+				
+				
+
+
+
+				<!-- Button -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="submit"></label>
+				  <div class="col-md-4">
+				    <button id="submit" name="submit" class="btn btn-success">Submit</button>
+				  </div>
+				</div>
+
+				</fieldset>
+				</form>
+
+			</div>
+			
+		
+		</div>
+	</div>
+</div>
+{% endblock %}
