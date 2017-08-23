@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>bloodbank/| Pathlolgy Service</title>
+    {% load static %}
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" type="text/css" href="{% static 'bloodbank/font-awesome/css/font-awesome.min.css' %}" >
+    
+   
+    <link rel="stylesheet" type="text/css" href="{% static 'bloodbank/css/animate.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'bloodbank/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'bloodbank/css/bootstrap.min.css' %}">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <nav id="myNavbar" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="row">
+      <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{% url 'index' %}">Kin_Ship</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="{% url 'index' %}" >Home</a></li>
+        <li><a href="">Sign Up</a></li> 
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="{% url 'faq' %}">FAQ</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#aboutus">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+    </div>
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- end-navigation -->
+<!-- header -->
+
+
+	<div class="wrapper">
+    {% block content %}{% endblock %}
+  </div>
+  <div class="navigate" >
+    <a href="#header"><i class="fa fa-home" aria-hidden="true"></i></a>
+  </div>
+
+
+  <!-- footer -->
+  <div class="footer" id="footer">
+    <div class="container">
+      <div class="rows">
+        <div class="col-lg-4 col-md-4">
+          <h4>ContactUs</h4>
+          <p><i class="fa fa-home" aria-hidden="true"></i>Imadole-13, Lalitpur, Nepal</p>
+          <p><i class="fa fa-envelope" aria-hidden="true"></i>iamramsapkota@gmail.comp</p>
+          <p><i class="fa fa-phone" aria-hidden="true"></i>+977-9840019874</p>
+          <p><i class="fa fa-globe" aria-hidden="true"></i>www.kinshipnepal.com</p>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <h4>About</h4>
+          <p><i class="fa fa-square-o" aria-hidden="true"></i> About Us</p>
+          <p><i class="fa fa-square-o" aria-hidden="true"></i> Privacy</p>
+          <p><i class="fa fa-square-o" aria-hidden="true"></i> Term & Conditions</p>
+        </div> 
+        <div class="col-lg-4 col-md-4">
+          <h4>Stay in Touch</h4>
+          <i class="social fa fa-facebook" aria-hidden="true"></i>
+          <i class="social fa fa-twitter" aria-hidden="true"></i>
+          <i class="social fa fa-linkedin" aria-hidden="true"></i>
+          <i class="social fa fa-pinterest-square" aria-hidden="true"></i>
+          <i class="social fa fa-youtube" aria-hidden="true"></i>
+          <i class="social fa fa-github" aria-hidden="true"></i><br>
+          <input type="email" name="" placeholder="Subscribe For Updates"><button class="btn btn-success">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end-footer -->
+
+
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{% static 'bloodbank/js/wow.min.js' %}"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{% static 'bloodbank/js/todo.js' %}"></script>
+    <script src="{% static 'bloodbank/js/bootstrap.min.js' %}"></script>
+
+
+    
+  </body>
+</html>

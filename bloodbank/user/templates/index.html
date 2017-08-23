@@ -1,0 +1,168 @@
+{% extends 'base.html' %}
+{% load static %}{% block content%}
+<!-- end-navigation -->
+<!-- header -->
+
+<div id="header" class="header cpace">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 wow bounceInLeft" data-wow-delay="1s">
+        <div class="main">
+          <h1 class="text-center">E-Blood Bank Nepal</h1><hr>
+        
+        <div class="text-center">
+          <a href=""><button class="btn btn-lg ">Login</button></a>
+        </div>
+      </div>
+      </div>
+      <div class="col-lg-6 col-md-6 text-center wow bounceInRight">
+        <img src="{% static 'bloodbank/images/res.png' %}" class="img-responsive">
+      </div>
+    </div>  
+    
+  </div>  
+</div>
+
+
+
+<!-- end-header -->
+
+<!-- services -->
+
+
+  <div class="services space" id="services">
+    <div class="container">
+      <h2 class="wow fadeInUp">Services</h2>
+      <p></p>
+      <div class="row">
+        <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.8s">
+          <i class="fa fa-cart-plus" aria-hidden="true"></i>
+          <h4>Blood Stock</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="{% url 'bloodstock' %}"><button class="btn  btn-danger wow pulse animated" data-wow-delay="100ms" data-wow-iteration="infinite" data-wow-duration="1s" style="visibility: visible; animation-duration: 2s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;" >view more</button></a>
+        </div>
+        <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.4s">
+          <i class="fa fa-university" aria-hidden="true"></i>
+          <h4>Blood Bank</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+          <a href="{% url 'bloodbank' %}"><button class="btn  btn-danger wow pulse animated" data-wow-delay="100ms" data-wow-iteration="infinite" data-wow-duration="1s" style="visibility: visible; animation-duration: 2s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;" >view more</button></a>
+        </div>
+        <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.8s">
+          <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+          <h4>Donation Events</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+          <a href=""><button class="btn  btn-danger wow pulse animated" data-wow-delay="100ms" data-wow-iteration="infinite" data-wow-duration="1s" style="visibility: visible; animation-duration: 2s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;" >view more</button></a>
+        </div>
+        <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.4s">
+          <i class="fa fa-heartbeat" aria-hidden="true"></i>
+          <h4>Donor's</h4>
+          <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+          <a href=""><button class="btn  btn-danger wow pulse animated" data-wow-delay="100ms" data-wow-iteration="infinite" data-wow-duration="1s" style="visibility: visible; animation-duration: 2s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;" >view more</button></a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- end-services -->
+
+
+
+  <!-- team -->
+  <div id="team" class="team space">
+    <div class="container">
+      <div class="row">
+        <h2 class="wow fadeInUp"> Meet Our Team</h2>
+        <p class="wow fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="2s">
+          <img src="{% static 'bloodbank/images/team/ram1.jpg' %}" class="img-circle" alt="">
+          <h4>Ram Sapkota</h4>
+          <b>CEO Kin_Ship</b>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="col-lg-6 col-md-36 wow fadeInLeft" data-wow-delay="0.8s">
+          <img src="{% static 'bloodbank/images/team/dinesh.jpg' %}" class="img-circle" alt="">
+          <h4>Dinesh Shrestha</h4>
+          <b>CEO Kin_Ship</b>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- end-team -->
+
+
+
+  <!-- contact -->
+  <div class="contact space" id="contact">
+    <div class="container">
+      <div class="row">
+        <h2 class="wow fadeInUp">Contact</h2>
+        <p class="wow fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="col-lg-6 col-md-6">
+          <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.8s">
+            <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+            <input  class="form-control" type="text"  area-describedby="sizing-addon1" placeholder="Full Nmae">
+          </div>
+          <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.2s">
+            <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+            <input  class="form-control" type="text"  area-describedby="sizing-addon1" placeholder="Email Address">
+          </div>
+          <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.6s">
+            <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-phone" aria-hidden="true"></i></span>
+            <input  class="form-control" type="text"  area-describedby="sizing-addon1" placeholder="Phone Number">
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="2s">
+          <div class="input-group">
+            <textarea class="form-control" name="" id="" cols="80" rows="6"></textarea>
+          </div>
+          <button class="btn btn-lg wow fadeInUp" data-wow-delay="2.4s">Submit Your Message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- end-contact -->
+  {% endblock %}
+
+
+
+
