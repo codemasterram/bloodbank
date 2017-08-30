@@ -20,3 +20,6 @@ def faq(request):
 
 def login(request):
 	return render(request, 'login.html')
+
+def donorlist(request):
+	return render(request, 'donorlist.html')

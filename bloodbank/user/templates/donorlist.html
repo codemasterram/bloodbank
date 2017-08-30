@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load static %}{% block content%}
+
+
+<div class="donorlist space">
+	<div class="container">
+		<div class="row">
+
+		<div class="col-md-3 col-xs-12" style="margin-bottom:10px;">
+			<select name="bloodgroup" id="bloodgroup" class="form-control">
+			<option value="--Choose Blood Group--">--Choose Blood Group--</option>
+			<option selected="selected" value="1">A+ve</option>
+			<option value="2">A-Ve</option>
+			<option value="3">B+ve</option>
+			<option value="4">B-ve</option>
+			<option value="5">AB+ve</option>
+			<option value="6">AB-ve</option>
+			<option value="7">O+ve</option>
+			<option value="8">O-ve</option>
+
+			</select>
+		</div>
+		
+		<div class="col-md-3 col-xs-12" style="margin-bottom:10px;">
+			<select name="location" id="location" class="form-control">
+			<option value="--Choose District--">--Choose District--</option>
+			<option value="1">Bhaktapur           </option>
+			<option value="2">Dhading             </option>
+			<option value="3">Kathmandu           </option>
+			<option value="4">Kavrepalanchok      </option>
+			<option value="5">Lalitpur            </option>
+			<option value="6">Nuwakot             </option>
+			<option value="7">Rasuwa              </option>
+			<option value="8">Sindhupalchok       </option>
+			<option value="9">Banke               </option>
+			<option value="10">Bardiya             </option>
+			<option value="11">Dailekh             </option>
+			<option value="12">Jajarkot            </option>
+			<option value="13">Surkhet             </option>
+			<option value="14">Baglung             </option>
+			<option value="15">Mustang             </option>
+			<option value="16">Myagdi              </option>
+			<option value="17">Parbat              </option>
+			<option value="18">Gorkha              </option>
+			<option value="19">Kaski               </option>
+			<option value="20">Lamjung             </option>
+			<option value="21">Manang              </option>
+			<option value="22">Syangja             </option>
+			<option value="23">Tanahu              </option>
+			<option value="24">Dhanusa             </option>
+			<option value="25">Dolakha             </option>
+			<option value="26">Mahottari           </option>
+			<option value="27">Ramechhap           </option>
+			<option value="28">Sarlahi             </option>
+			<option value="29">Sindhuli            </option>
+			<option value="30">Dolpa               </option>
+			<option value="31">Humla               </option>
+			<option value="32">Jumla               </option>
+			<option value="33">Kalikot             </option>
+			<option value="34">Mugu                </option>
+			<option value="35">Bhojpur             </option>
+			<option value="36">Dhankuta            </option>
+			<option value="37">Morang              </option>
+			<option value="38">Sankhuwasabha       </option>
+			<option value="39">Sunsari             </option>
+			<option value="40">Terhathum           </option>
+			<option value="41">Arghakhanchi        </option>
+			<option value="42">Gulmi               </option>
+			<option value="43">Kapilvastu          </option>
+			<option value="44">Nawalparasi         </option>
+			<option value="45">Palpa               </option>
+			<option value="46">Rupandehi           </option>
+			<option value="47">Baitadi             </option>
+			<option value="48">Dadeldhura          </option>
+			<option value="49">Darchula            </option>
+			<option value="50">Kanchanpur          </option>
+			<option value="51">Ilam                </option>
+			<option value="52">Jhapa               </option>
+			<option value="53">Panchthar           </option>
+			<option value="54">Taplejung           </option>
+			<option value="55">Bara                </option>
+			<option value="56">Chitwan             </option>
+			<option value="57">Makwanpur           </option>
+			<option value="58">Parsa               </option>
+			<option value="59">Rautahat            </option>
+			<option value="60">Dang                </option>
+			<option value="61">Pyuthan             </option>
+			<option value="62">Rolpa               </option>
+			<option value="63">Rukum               </option>
+			<option value="64">Salyan              </option>
+			<option value="65">Khotang             </option>
+			<option value="66">Okhaldhunga         </option>
+			<option value="67">Saptari             </option>
+			<option value="68">Siraha              </option>
+			<option value="69">Solukhumbu          </option>
+			<option value="70">Udayapur            </option>
+			<option value="71">Achham              </option>
+			<option value="72">Bajhang             </option>
+			<option value="73">Bajura              </option>
+			<option value="74">Doti                </option>
+			<option value="75">Kailali             </option>
+		</select>
+		</div>
+
+		<div class="col-md-2 col-xs-12" style="margin-bottom:10px;">
+			<input type="submit" name="search" value="Search" class="form-control btn-info" style="font-weight:bold;">
+		</div>
+
+		<div class="col-md-2 col-xs-12 pull-right" style="margin-bottom:10px;">
+			<a id="SignUp" class="form-control btn-danger text-center" style="text-decoration:none;" href="">Become a Donor</a>
+		</div>
+
+
+
+		</div>
+	</div>
+</div>
+
+
+ {% endblock %}

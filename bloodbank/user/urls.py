@@ -7,4 +7,7 @@ urlpatterns = [
     url(r'^bloodbank$', views.bloodbank, name='bloodbank'),
     url(r'^faq$', views.faq, name='faq'),
     url(r'^login$', views.login, name='login'),
+    url(r'^donorlist$', views.donorlist, name='donorlist'),
+
+    
 ]
