@@ -1,0 +1,137 @@
+{% extends 'base.html' %}
+{% load static %}{% block content%}
+
+<div class="space">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2">
+				
+			</div>
+			<div class="col-md-8">
+				<form class="form-horizontal labform well" method="POST" action="">
+				{% csrf_token %}
+				<fieldset>
+
+				<!-- Form Name -->
+				<legend>Form Details</legend>
+
+				<!-- Text input-->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="bloodbankname">Blood Bank Name:</label>  
+				  <div class="col-md-5">
+				  <input id="bloodbankname" name="bloodbankname" type="text" placeholder="User Name" class="form-control input-md" required="">
+				    
+				  </div>
+				</div>
+
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="district">District:</label>  
+				  <div class="col-md-5">
+				  <input id="district" name="district" type="text" placeholder="User Name" class="form-control input-md" required="">
+				    
+				  </div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-4 control-label">Institution Type</label>
+					<div class="col-md-5">
+						<select class="form-control" >
+						<option>Private</option>
+						<option>Government</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="landline">Contact No:</label>  
+				  <div class="col-md-5">
+				  <input id="landline" name="landline" type="text" placeholder="Contact No" class="form-control input-md" required="">
+				    
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="email">Email:</label>  
+				  <div class="col-md-5">
+				  <input id="email" name="email" type="email" placeholder="Email" class="form-control input-md" required="">
+				    
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="apositive">A Positive:</label>  
+				  <div class="col-md-5">
+				  <input id="apositive" name="apositive" type="number" min="0" placeholder="A Posotive" class="form-control input-md" required="">
+				    
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="anegative">A Negative:</label>  
+				  <div class="col-md-5">
+				  <input id="anegative" name="anegative" type="number" min="0" placeholder="A Negative" class="form-control input-md" required="">
+				    
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="bpositive">B Positive:</label>  
+				  <div class="col-md-5">
+				  <input id="bpositive" name="bpositive" type="number" min="0" placeholder="B Posotive" class="form-control input-md" required="">
+				    
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="bnegative">B Negative:</label>  
+				  <div class="col-md-5">
+				  <input id="bnegative" name="bnegative" type="number" min="0" placeholder="A Posotive" class="form-control input-md" required="">
+				    
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="abpositive">AB Positive:</label>  
+				  <div class="col-md-5">
+				  <input id="abpositive" name="abpositive" type="number" min="0" placeholder="AB Positive" class="form-control input-md" required="">
+				    
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="abnegative">AB Negative:</label>  
+				  <div class="col-md-5">
+				  <input id="abnegative" name="abnegative" type="number" min="0" placeholder="AB Negative" class="form-control input-md" required="">
+				    
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="opositive">O Positive:</label>  
+				  <div class="col-md-5">
+				  <input id="opositive" name="opositive" type="number" min="0" placeholder="O Positive" class="form-control input-md" required="">
+				    
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="onegative">O Negative:</label>  
+				  <div class="col-md-5">
+				  <input id="onegative" name="onegative" type="number" min="0" placeholder="O Negative" class="form-control input-md" required="">
+				    
+				  </div>
+				</div>
+
+				<!-- Text input-->
+					
+				
+
+
+
+				<!-- Button -->
+				<div class="form-group">
+				  <label class="col-md-4 control-label" for="submit"></label>
+				  <div class="col-md-4">
+				    <button id="submit" name="submit" class="btn btn-success">Submit</button>
+				  </div>
+				</div>
+
+				</fieldset>
+				</form>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

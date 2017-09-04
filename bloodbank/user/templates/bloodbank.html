@@ -53,28 +53,27 @@
 				<tr>
 				<th>S.No</th>
 				<th>District</th>
-				<th>Blood Bank</th>
+				<th>Blood Bank Type</th>
 				<th>Institution Name</th>
 				<th>Landline</th>
 				<th>Email</th>
 				</tr>
 				</thead>
 			<tbody id="blood_bank_details_pane">
-			<tr>
-			<td class="number_td" style="width:40px;">87</td>
-			<td class="text_td">Virudhunagar</td>
-			<td class="text_td">Govt. Blood Banks</td>
-			<td class="text_td">Govt. Hospital, Sivakasi</td>
-			<td class="text_td">04562 - 220301</td>
-			<td class="text_td">svkghictc@gmail.com</td>
-			</tr><tr>
-			<td class="number_td" style="width:40px;">88</td>
-			<td class="text_td">Virudhunagar</td>
-			<td class="text_td">Govt. Blood Banks</td>
-			<td class="text_td">Govt.Head Quarters Hospital, Virudhunagar</td>
-			<td class="text_td">04562 - 244425</td>
-			<td class="text_td">vnrghbb@gmail.com</td>
-			</tr>                                        
+			{% if not items %}
+				<div class = 'alert alert-warning'><p>no items to display	</p></div>
+				{% else %}
+					{% for item in items %}				
+					<tr>
+						<td class="number_td" style="width:40px;">{{item.id}}</td>
+						<td class="text_td">{{item.District}}</td>
+						<td class="text_td">{{item.institution_name}}</td>
+						<td class="text_td">{{item.Institution_name}}</td>
+						<td class="text_td">{{item.Landline}}</td>
+						<td class="text_td">{{item.Email}}</td>
+					</tr>
+					{% endfor %}
+				{% endif %}                                       
 			</tbody>
 			</table>
 		 </div>

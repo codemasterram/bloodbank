@@ -53,20 +53,42 @@
                         <table class="table table-bordered text-center" id="bloodStockInstWise">
                             <thead>
                                 <tr>
-                                    <th rowspan="2" class="text-center">Institution Name</th>
-                                    <th colspan="8" class="">Whole Blood</th>
+                                    <th rowspan="2" class="text-center">Institution 	Name                                    </th>
+                                    <th colspan="8" class="">Whole Blood
+                                    	
+                                    </th>    
                                     <th rowspan="2" class="">Updated on</th>
+                                    <tr>                      	
+										<th>A+</th>
+                                    	<th>A-</th>
+                                    	<th>B+</th>
+                                    	<th>B-</th>
+                                    	<th>AB+</th>
+                                    	<th>AB-</th>
+                                    	<th>O+</th>
+                                    	<th>O-</th>
+                                    </tr>                                    
                                 </tr>
-                                <tr>
-                                    <th>A+</th>
-                                    <th>A-</th>
-                                    <th>B+</th>
-                                    <th>B-</th>
-                                    <th>AB+</th>
-                                    <th>AB-</th>
-                                    <th>O+</th>
-                                    <th>O-</th>
-                                </tr>
+                                
+                                
+                                {% if items %}
+								{% for item in items %}
+								<tr>
+                                	<td>{{item.Institution_name}}</td>
+                                	<th>{{item.A_positive}}</th>
+                                    <th>{{item.A_negative}}</th>
+                                    <th>{{item.B_positive}}</th>
+                                    <th>{{item.B_negative}}</th>
+                                    <th>{{item.AB_positive}}</th>
+                                    <th>{{item.AB_negative}}</th>
+                                    <th>{{item.O_positive}}</th>
+                                    <th>{{item.O_negative}}</th>
+                               		<td>{{item.UpDated_On}}</td>
+                               	</tr>                               
+                               	{% endfor %}
+								{% else %}
+                                	<div class = 'alert alert-warning'><p>no items to display	</p></div>
+                               	{% endif %}
                             </thead>
                             <tbody>
                             	

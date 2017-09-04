@@ -1,18 +1,25 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
+from user.models import Bloodbank
 
 
 
 def index(request):
 	return render(request, 'index.html')
 
+def entry(request):
+	return render(request, 'entry.html')
+
 
 
 def bloodstock(request):
-	return render(request, 'bloodstock.html')
+	item = Bloodbank.objects.all()
+	return render(request, 'bloodstock.html',{'items': item})
 
 
 def bloodbank(request):
-	return render(request, 'bloodbank.html')
+	item = Bloodbank.objects.all()
+
+	return render(request, 'bloodbank.html',{'items': item})
 
 
 def faq(request):
@@ -21,5 +28,13 @@ def faq(request):
 def login(request):
 	return render(request, 'login.html')
 
-def donorlist(request):
+def add(request):	
+	return render(request, 'add.html')
+
+def donors(request):	
 	return render(request, 'donorlist.html')
+
+def register(request):	
+	return render(request, 'registration.html')
+def events(request):	
+	return render(request, 'events.html')
