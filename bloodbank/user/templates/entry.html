@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}{% block content%}
 
+
+
+
 <div class="space">
 	<div class="container">
 		<div class="row">
@@ -19,7 +22,7 @@
 				<div class="form-group">
 				  <label class="col-md-4 control-label" for="bloodbankname">Blood Bank Name:</label>  
 				  <div class="col-md-5">
-				  <input id="bloodbankname" name="bloodbankname" type="text" placeholder="User Name" class="form-control input-md" required="">
+				  <input name="Institution_name" id="id_Institution_name" type="text" placeholder="User Name" class="form-control input-md" required="">
 				    
 				  </div>
 				</div>
@@ -31,18 +34,18 @@
 				    
 				  </div>
 				</div>
+				
 				<div class="form-group">
-					<label class="col-md-4 control-label">Institution Type</label>
+					<label class="col-md-4 control-label">Institution name</label>
 					<div class="col-md-5">
-						<select class="form-control" >
-						<option>Private</option>
-						<option>Government</option>
-						</select>
+							<select class="form-control" name="" id="">
+ 								<option value="{{form.institution_name}}"></option>
+							</select>
 					</div>
 				</div>
 
 				<div class="form-group">
-				  <label class="col-md-4 control-label" for="landline">Contact No:</label>  
+				  <label class="col-md-4 control-label" for="landline">Contact</label>  
 				  <div class="col-md-5">
 				  <input id="landline" name="landline" type="text" placeholder="Contact No" class="form-control input-md" required="">
 				    
@@ -133,5 +136,6 @@
 		</div>
 	</div>
 </div>
+
 
 {% endblock %}

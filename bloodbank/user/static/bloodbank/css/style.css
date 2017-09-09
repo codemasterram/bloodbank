@@ -347,7 +347,7 @@ p {
 .footer {
 	
 	padding:30px;
-	color: #cccccc;
+	color: #eee;
 	background-color: #222222;
 }
 .footer .social {
@@ -410,15 +410,15 @@ p {
 .bloodstock th {
     padding: 2px !important;
     vertical-align: middle !important;
-    background-color: #002060 !important;
-    color: #FFF !important;
+    color: #eee!important;
+	background-color: #222222!important;
     text-align: center;
 }
 .bloodbank th {
     padding: 10px !important;
     vertical-align: middle !important;
-    background-color: #002060 !important;
-    color: #FFF !important;
+    color: #eee!important;
+	background-color: #222222!important;
     text-align: center;
 }
 
@@ -456,4 +456,25 @@ p {
 }
 
 
+/*evnts*/
+.eventBox {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	height: 500px;
+	width: 80%;
+	color: black !important;
+
+
+}
+.eventsDetails {
+	height: 250px;
+
+
+
+}
+.eventImage {
+height: 100%;
+}
+/*events end here*/
 

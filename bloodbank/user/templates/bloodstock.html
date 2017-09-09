@@ -6,44 +6,46 @@
 <div class="space bloodstock" >
 	<div class="container">
 		<div class="row">
-		<h2 class="well"><i class="fa fa-cart-plus" aria-hidden="true"></i>Overall Blood Stock	 Status</h2>
-			 <div class="col-md-3">
-				<div class="form-group">
-					<label >Example select</label>
-						<select class="form-control" >
-						<option>All</option>
-						<option>Kathmandu</option>
-						<option>Lalitpur</option>
-						<option>Bhaktapur</option>
-						</select>
-				</div>
-			 </div>
-			 <div class="col-md-3">
-			 	<div class="form-group">
-					<label >Blood Bank</label>
-						<select class="form-control" >
-						<option>All</option>
-						<option>Priv.Blood Bank</option>
-						<option>Govt.Blood Bank</option>
-						</select>
-				</div>
-			 </div>
-			 <div class="col-md-3">
-			 	<div class="form-group">
-					<label >Search By Institution</label>
-						<select class="form-control" >
-						<option>All</option>
-						<option>Red Cross Society</option>
-						<option>Bir Hospital</option>
-						<option>Model Hospital</option>
-						<option>Teaching Hospital</option>
-						<option>Civil Hospital</option>
-						</select>
-				</div>
-			 </div>
-			 <div class="col-md-3"><br>
-			 	<button type="submit" class="btn btn-success">Search</button>
-			 </div>
+			<form method="GET" >
+				<h2 class="well"><i class="fa fa-cart-plus" aria-hidden="true"></i>Overall Blood Stock	 Status</h2>
+				 <div class="col-md-3">
+					<div class="form-group">
+						<label >Example select</label>
+							<select class="form-control" >
+							<option>All</option>
+							<option>Kathmandu</option>
+							<option>Lalitpur</option>
+							<option>Bhaktapur</option>
+							</select>
+					</div>
+				 </div>
+				 <div class="col-md-3">
+				 	<div class="form-group">
+						<label >Blood Bank</label>
+							<select class="form-control" >
+							<option>All</option>
+							<option>Priv.Blood Bank</option>
+							<option>Govt.Blood Bank</option>
+							</select>
+					</div>
+				 </div>
+				 <div class="col-md-3">
+				 	<div class="form-group">
+						<label >Search By Institution</label>
+							<select class="form-control" >
+							<option>All</option>
+							<option>Red Cross Society</option>
+							<option>Bir Hospital</option>
+							<option>Model Hospital</option>
+							<option>Teaching Hospital</option>
+							<option>Civil Hospital</option>
+							</select>
+					</div>
+				 </div>
+				 <div class="col-md-3"><br>
+				 	<button type="submit" class="btn btn-success">Search</button>
+				 </div>
+			</form>
 		</div>
 	</div>
 	<div class="container">
@@ -53,7 +55,8 @@
                         <table class="table table-bordered text-center" id="bloodStockInstWise">
                             <thead>
                                 <tr>
-                                    <th rowspan="2" class="text-center">Institution 	Name                                    </th>
+                                	<th rowspan="2" class="text-center">S.No</th>
+                                    <th rowspan="2" class="text-center">Institution Name</th>
                                     <th colspan="8" class="">Whole Blood
                                     	
                                     </th>    
@@ -74,15 +77,16 @@
                                 {% if items %}
 								{% for item in items %}
 								<tr>
+									<td>{{item.id}}</td>
                                 	<td>{{item.Institution_name}}</td>
-                                	<th>{{item.A_positive}}</th>
-                                    <th>{{item.A_negative}}</th>
-                                    <th>{{item.B_positive}}</th>
-                                    <th>{{item.B_negative}}</th>
-                                    <th>{{item.AB_positive}}</th>
-                                    <th>{{item.AB_negative}}</th>
-                                    <th>{{item.O_positive}}</th>
-                                    <th>{{item.O_negative}}</th>
+                                	<td>{{item.A_positive}}</td>
+                                    <td>{{item.A_negative}}</td>
+                                    <td>{{item.B_positive}}</td>
+                                    <td>{{item.B_negative}}</td>
+                                    <td>{{item.AB_positive}}</td>
+                                    <td>{{item.AB_negative}}</td>
+                                    <td>{{item.O_positive}}</td>
+                                    <td>{{item.O_negative}}</td>
                                		<td>{{item.UpDated_On}}</td>
                                	</tr>                               
                                	{% endfor %}
