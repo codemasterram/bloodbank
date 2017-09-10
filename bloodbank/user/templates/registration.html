@@ -3,92 +3,13 @@
 
 <div class="space">
 	<div class="container">
-		<div class="row">
-			<div class="col-md-2">
-				
-			</div>
-			<div class="col-md-8">
-				<form class="form-horizontal labform well" method="POST" action="">
-				{% csrf_token %}
-				<fieldset>
-
-				<!-- Form Name -->
-				<legend>Registration Form for new donor</legend>
-
-				<!-- Text input-->
-				<div class="form-group">
-				  <label class="col-md-4 control-label" for="firstname">First Name</label>  
-				  <div class="col-md-5">
-				  <input id="firstname" name="firstname" type="text" placeholder="First Name" class="form-control input-md" required="">
-				    
-				  </div>
-				</div>
-
-				<div class="form-group">
-				  <label class="col-md-4 control-label" for="lastname">Last Name</label>  
-				  <div class="col-md-5">
-				  <input id="lastname" name="lastname" type="text" placeholder="Last Name" class="form-control input-md" required="">
-				    
-				  </div>
-				</div>
-
-				<div class="form-group">
-					<label class="col-md-4 control-label">Blood Group:</label>
-					<div class="col-md-5">
-						<select class="form-control" >
-						<option>Select Your Blood Group</option>
-						<option>A Positive</option>
-						<option>A Negative</option>
-						<option>B Positive</option>
-						<option>B Negative</option>
-						<option>AB Positive</option>
-						<option>AB Negative</option>
-						<option>O Positive</option>
-						<option>O Negative</option>
-						</select>
-					</div>
-				</div>
-
-				<div class="form-group">
-				  <label class="col-md-4 control-label" for="landline">Contact No:</label>  
-				  <div class="col-md-5">
-				  <input id="landline" name="landline" type="text" placeholder="Contact No" class="form-control input-md" required="">
-				    
-				  </div>
-				</div>
-				<div class="form-group">
-				  <label class="col-md-4 control-label" for="email">Email:</label>  
-				  <div class="col-md-5">
-				  <input id="email" name="email" type="email" placeholder="Email" class="form-control input-md">
-				    
-				  </div>
-				</div>
-				<div class="form-group">
-				  <label class="col-md-4 control-label" for="date">Last Donated On:</label>  
-				  <div class="col-md-5">
-				  <input id="lastdonateddate" name="lastdonateddate" type="date" placeholder="last Donated Date" class="form-control input-md">
-				    
-				  </div>
-				</div>
-				<!-- Text input-->
-					
-				
-
-
-
-				<!-- Button -->
-				<div class="form-group">
-				  <label class="col-md-4 control-label" for="submit"></label>
-				  <div class="col-md-4">
-				    <button id="submit" name="submit" class="btn btn-success">Submit</button>
-				  </div>
-				</div>
-
-				</fieldset>
-				</form>
-			</div>
-			<div class="col-md-2"></div>
-		</div>
+		
+		<form method="post">{%csrf_token%}
+			{{form.as_p}}
+		<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
 	</div>
 </div>
+
+
 {% endblock %}

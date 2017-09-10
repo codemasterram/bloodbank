@@ -1,7 +1,7 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
-from user.models import Bloodbank
-from .forms import BloodbankForm
+from user.models import Bloodbank,Donors
+from .forms import BloodbankForm,DonorsForms
 
 
 
@@ -31,8 +31,9 @@ def bloodstock(request):
 
 def bloodbank(request):
 	item = Bloodbank.objects.all()
+	form=BloodbankForm()
 
-	return render(request, 'bloodbank.html',{'items': item})
+	return render(request, 'bloodbank.html',{'items': item,'form':form})
 
 
 def faq(request):
@@ -44,10 +45,27 @@ def login(request):
 def add(request):	
 	return render(request, 'add.html')
 
-def donors(request):	
-	return render(request, 'donorlist.html')
+def donors(request):
+	data=Donors.objects.all()
+	return render(request, 'donorlist.html', {'data':data})
+
 
 def register(request):	
-	return render(request, 'registration.html')
+	data=Donors.objects.all()
+	if request.method == 'POST':
+		form=DonorsForms(request.POST)
+		if form.is_valid():
+			form.save()
+		return HttpResponse('Thank You')
+	else:
+		form=DonorsForms()
+
+
+
+	return render(request, 'registration.html', {'form':form,'data':data})
+
+
+
+	
 def events(request):	
 	return render(request, 'events.html')

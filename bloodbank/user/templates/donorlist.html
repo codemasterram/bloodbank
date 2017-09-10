@@ -115,6 +115,50 @@
 		</div>
 	</div>
 </div>
+<div class="space">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+					<table class="table table-bordered">
+				<thead>
+				<tr>
+				<th>S.No</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>District</th>
+				<th>Gender</th>
+				<th>Contact No</th>
+				<th>Email</th>
+				</tr>
+				</thead>
+			<tbody id="blood_bank_details_pane">
+			
+					{% for data in data %}	
+					{% if not data %}
+				<div class = 'alert alert-warning'><p>no items to display	</p></div>
+				{% else %}			
+					<tr>
+						<td class="number_td" style="width:40px;">{{data.id}}</td>
+						<td class="text_td">{{data.FirstName}}</td>
+						<td class="text_td">{{data.LastName}}</td>
+						<td class="text_td">{{data.district}}</td>
+						<td class="text_td">{{data.GENDER}}</td>
+						<td class="text_td">{{data.ContactNumber}}</td>
+						<td class="text_td">{{data.Email}}</td>
+
+					</tr>
+					{% endif %}       
+					{% endfor %}
+				                                
+			</tbody>
+			</table>
+
+			</div>
+		</div>
+	</div>
+</div>
+
 
 
  {% endblock %}
